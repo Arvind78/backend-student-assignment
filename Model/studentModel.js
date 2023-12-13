@@ -1,9 +1,12 @@
+
 const mongoose = require('mongoose')
 
-const studentSchame = new mongoose.Schema({
-    id:{type:Number},
-    name:{type:String},
-    gpa:{type:Number}
+// Define a schema for student details using Mongoose Schema
+const studentSchema = new mongoose.Schema({
+    id: { type: Number },   
+    name: { type: String },  
+    gpa: { type: Number }    
 })
 
-module.exports = mongoose.model("studentDetels",studentSchame);
+// Export the mongoose model for student details using the defined schema
+module.exports = mongoose.model("studentDetels", studentSchema);
