@@ -1,0 +1,54 @@
+Certainly! Below is an example `README.txt` file content for your backend assignment:
+
+```
+# Canvas Backend Assignment README
+
+This repository contains the backend implementation for managing student data using Node.js and Express.
+
+## Instructions
+
+### 1. Running the Application
+
+To start the backend server, follow these steps:
+
+1. Extract the ZIP folder.
+2. Open any editor (e.g., Visual Studio Code, Sublime Text, etc.).
+3. Open the terminal.
+4. Run the following commands:
+
+```bash
+npm install
+node index.js
+```
+
+This will start the server on `http://localhost:8080`.
+
+### 2. Endpoints
+
+#### Student Details
+
+1. **Create Student**: Send a POST request to `/` endpoint using Postman to add a new student. Include student details such as ID (unique), name, and GPA in the request body.
+
+2. **Retrieve All Students**: Use a browser to send a GET request to `/allStudent` endpoint to fetch all student data.
+
+3. **Retrieve Specific Student**: Access a specific student's details by sending a GET request to `/student/:id` endpoint, replacing `:id` with the student's ID.
+
+4. **Retrieve Topper Student**: Fetch the student with the highest GPA by sending a GET request to `/topper` endpoint.
+
+#### API Endpoints:
+
+- `/allStudent`: Retrieve all student data.
+- `/student/:id`: Get specific student details by ID.
+- `/topper`: Retrieve the student with the highest GPA.
+
+### Usage
+
+After starting the server, navigate to the following URLs in your browser:
+
+1. [http://localhost:8080/allStudent](http://localhost:8080/allStudent) - Retrieve all student details.
+2. [http://localhost:8080/student/104](http://localhost:8080/student/104) - Get details of the student with ID 104.
+3. [http://localhost:8080/topper](http://localhost:8080/topper) - Fetch the student with the highest GPA.
+
+```
+
+This README file includes instructions for setting up and running the backend application, along with details about the available endpoints for creating, retrieving, and fetching student data using Postman or a browser. Adjust the endpoint details as needed based on your specific implementation.
